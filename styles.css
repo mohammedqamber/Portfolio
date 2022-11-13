@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    background-color: #75b5d1;
+    font-family: 'Montserrat', sans-serif;
+    width: 15vw;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+}
+
+.main{
+    /* background-color: rgb(245, 239, 230); */
+    width: 85vw;
+    height: 100vh;
+}
+
+.ham{
+    width: 40px;
+    display: none;
+}
+
+.sidebar nav{
+    padding: 30px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    margin: 30px 0;
+}
+.sidebar nav li a:hover{
+    color: rgb(231, 231, 231);
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.infoContainer{
+    /* background-color: blueviolet; */
+    display: flex;
+    height: 80%;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.devInfo{
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+
+}
+.devPic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.hello{
+    font-size: 30px;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.about{
+    font-size: 20px;
+}
+.buttons{
+    margin-top: 30px;
+}
+.btn{
+    padding: 10px 15px;
+    margin: 7px;
+    font-size: 15px;
+    border-radius: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #75b5d1;
+}
+.contactHeading{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-top: 44px;
+}
+.contactForm{
+   text-align: center;
+   margin-top: 38px;
+}
+
+.contactForm form div{
+    padding: 10px;
+}
+.input{
+    height: 25px;
+    width: 22vw;
+}
+/* .contactForm form button{
+    font-size: 15px;
+    padding: 0 22px;
+} */
+
+/* intro page */
+.introContainer{
+    font-family: "Roboto Mono";
+    margin: 1.5rem 1.5rem;
+}
+
+.space{
+    margin: 10px 0;;
+}
+.introContainer ul li{
+    margin: 5px 0;
+}
+
+
+
+@media(max-width:1011px){
+    .sidebar{
+        translate: -1200px;
+        position: absolute;
+        width: 171px;
+        
+    }
+     .container{
+        display: inline-block;
+     }
+     .main{
+        margin: 1.5rem
+     }
+
+    .sidebarGo{
+        translate: 0px;
+    }
+ 
+    .ham{
+        position: absolute;
+        display: inline-block;
+    }
+    .infoContainer{
+      flex-direction: column-reverse;      
+    }
+   .input{
+        height: 25px;
+        width: 80%;
+    }
+
+
+}
